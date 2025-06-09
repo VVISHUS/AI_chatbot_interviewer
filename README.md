@@ -97,7 +97,7 @@ await agent.init_func()
 - **Evaluation**: Comprehensive performance analysis
 - **Scoring**: Technical competency + soft skills assessment
 - **Recommendation**: Final hiring decision with detailed reasoning
-
+### Note: **These number of question scan easily be changed in the prompt by the interviewer or admin**
 ## 🎛️ Core Functionalities
 
 ### 1. **Intelligent Question Generation**
