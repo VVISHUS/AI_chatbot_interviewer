@@ -391,5 +391,3 @@ This comprehensive UI layer makes the powerful HiringAgent accessible to non-tec
 - **Session Completion**: 15-25 minutes average interview time
 
 ---
-
-**Built for TalenScout** - Revolutionizing technical interviews with AI-powered precision and fairness.
