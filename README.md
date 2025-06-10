@@ -1,7 +1,11 @@
 # HiringAgent - AI-Powered Technical Interview System
 
 An intelligent, automated interview system that conducts structured technical screenings with adaptive conversation flow, real-time question generation, and comprehensive candidate evaluation.
-
+---
+![Application Screenshot(Form Submission Page)](assets/ss_1.png)
+---
+![Application Screenshot(Chat Interface)](assets/ss_2.png)
+---
 ## 🚀 Overview
 
 The **HiringAgent** is a sophisticated AI interviewer that combines casual conversation with structured technical assessments. It dynamically generates personalized screening questions based on job descriptions and candidate profiles, then conducts fair, consistent interviews with built-in evaluation mechanisms.
