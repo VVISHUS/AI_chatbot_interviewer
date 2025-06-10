@@ -144,7 +144,6 @@ class HiringAgent:
 
         except Exception as e:
             print(f"[ERROR] Failed to generate screening questions: {e}")
-            self.screening_questions = self.get_fallback_questions()
 
 
     async def save_questions_to_file_async(self):
