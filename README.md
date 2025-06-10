@@ -2,9 +2,9 @@
 
 An intelligent, automated interview system that conducts structured technical screenings with adaptive conversation flow, real-time question generation, and comprehensive candidate evaluation.
 ---
-![Application Screenshot(Form Submission Page)](/assets/ss_1.png)
+![Application Screenshot(Form Submission Page)](ss1.png)
 ---
-![Application Screenshot(Chat Interface)](/assets/ss_2.png)
+![Application Screenshot(Chat Interface)](ss_2.png)
 ---
 ## 🚀 Overview
 
