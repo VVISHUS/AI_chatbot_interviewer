@@ -43,8 +43,8 @@ class parser():
         else:
             raise ValueError("Unsupported file type. Only .pdf and .docx are supported.")
 
-if __name__ == "__main__":
-    parser=parser()
-    content = parser.extract_text(doc_path="G:/scripts/PG-AGI/hiring-assistant-chatbot/submissions/resumes/VAIBHAV_SINGH_5dbc5831-cea0-4c22-b30a-29d2300c8254_resume.pdf")
-    print("\n📄 Extracted Content:\n")
-    print(content[:2000] + "...\n" if len(content) > 2000 else content)
+# if __name__ == "__main__":
+#     parser=parser()
+#     content = parser.extract_text(doc_path="G:/scripts/PG-AGI/hiring-assistant-chatbot/submissions/resumes/VAIBHAV_SINGH_5dbc5831-cea0-4c22-b30a-29d2300c8254_resume.pdf")
+#     print("\n📄 Extracted Content:\n")
+#     print(content[:2000] + "...\n" if len(content) > 2000 else content)
