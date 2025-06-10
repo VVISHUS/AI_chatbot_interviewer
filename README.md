@@ -34,6 +34,14 @@ The **HiringAgent** is a sophisticated AI interviewer that combines casual conve
 - Consistent question presentation format
 - Response length limitations (500 characters max)
 
+### 🕒 **Session Management & Resource Controls***
+
+- Time Limit: 3-minute maximum session duration with automatic timeout
+- **Interaction Limit**: Maximum 15 chat interactions per session
+- **Session Tracking**: Real-time elapsed time and interaction count monitoring
+- **Automatic Restart**: Complete session reset on timeout or limit reached
+- **Resource Protection**: Prevents excessive usage and ensures fair access
+
 ## 🏗️ System Architecture
 
 ### Core Components
@@ -311,8 +319,12 @@ st.session_state = {
     "agent": HiringAgent_instance,         # Initialized agent
     "chat_messages": [],                   # Conversation history
     "interaction_count": 0                 # Usage tracking
+    "total_time": 10`                      # Total Session duration
+    "elapsed_time": 0                      # Total elapsed time
 }
 ```
+
+
 
 #### **File Processing Pipeline**
 1. **JD Processing**: Automatically scans `JDs/` folder and parses all job descriptions
@@ -333,11 +345,6 @@ for position, file_path in JDs.items():
 ```
 
 ### **UI/UX Design Features**
-
-#### **Responsive Layout**
-- **Wide Layout**: Maximizes screen usage for form fields and chat
-- **Column-based Design**: Organized information display with proper spacing
-- **Tab Navigation**: Clear separation between form and chat functionalities
 
 #### **User Experience Enhancements**
 - **Progress Indicators**: Shows form completion and chat usage status
