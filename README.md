@@ -2,7 +2,7 @@
 
 An intelligent, automated interview system that conducts structured technical screenings with adaptive conversation flow, real-time question generation, and comprehensive candidate evaluation.
 ---
-![Application Screenshot(Form Submission Page)](ss1.png)
+![Application Screenshot(Form Submission Page)](https://github.com/VVISHUS/hiring-assistant-chatbot/blob/main/assets/ss1.png)
 ---
 ![Application Screenshot(Chat Interface)](ss_2.png)
 ---
