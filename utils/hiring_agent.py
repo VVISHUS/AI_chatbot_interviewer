@@ -18,10 +18,10 @@ class HiringAgent:
     def __init__(self,  resume_details:dict,candidate_details: dict, jd_details: dict, primary_llm="gemini", fallback_llm="hyperbolic", add_details: dict = None):
         self.primary_llm = primary_llm
         self.fallback_llm = fallback_llm
-        self.primary_url = os.getenv("primary_url")
-        self.fallback_url = os.getenv("fallback_url")
-        self.primary_llm_key = os.getenv("GEMINI_API_KEY")
-        self.fallback_llm_key = os.getenv("HYPERBOLIC")
+        self.primary_url =  st.secrets["primary_url"]
+        self.fallback_url =  st.secrets["fallback_url"]
+        self.primary_llm_key =  st.secrets["GEMINI_API_KEY"]
+        self.fallback_llm_key =  st.secrets["HYPERBOLIC"]
         self.analysis_done=False
         # Validate and handle empty candidate_details
         if not candidate_details or not isinstance(candidate_details, dict):
