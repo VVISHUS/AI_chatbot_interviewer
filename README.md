@@ -4,7 +4,7 @@ An intelligent, automated interview system that conducts structured technical sc
 ---
 ![Application Screenshot(Form Submission Page)](https://github.com/VVISHUS/hiring-assistant-chatbot/blob/main/assets/ss1.png)
 ---
-![Application Screenshot(Chat Interface)](ss_2.png)
+![Application Screenshot(Chat Interface)](https://github.com/VVISHUS/hiring-assistant-chatbot/blob/main/assets/ss2.png)
 ---
 ## 🚀 Overview
 
