@@ -536,6 +536,7 @@ if not st.session_state.form_submitted:
                 """, unsafe_allow_html=True)
 
 # Sidebar Instructions
+st.markdown("---")
 st.sidebar.header("How to Use")
 st.sidebar.markdown(f"""
 1. Complete the candidate form
