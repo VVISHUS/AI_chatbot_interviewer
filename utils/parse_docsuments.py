@@ -1,6 +1,6 @@
 import os
-import pymupdf  # PyMuPDF
-import docx
+import pdfplumber
+from docx import Document
 
 
 class parser():
@@ -10,9 +10,11 @@ class parser():
     def extract_text_from_pdf(self, pdf_path):
         text = ""
         try:
-            with pymupdf.open(pdf_path) as doc:
-                for page in doc:
-                    text += page.get_text()
+            with pdfplumber.open(pdf_path) as pdf:
+                for page in pdf.pages:
+                    page_text = page.extract_text()
+                    if page_text:
+                        text += page_text + "\n"
         except Exception as e:
             print(f"❌ Error reading PDF {pdf_path}: {e}")
         return text
@@ -20,7 +22,7 @@ class parser():
     def extract_text_from_docx(self, docx_path):
         text = ""
         try:
-            doc = docx.Document(docx_path)
+            doc = Document(docx_path)
             for para in doc.paragraphs:
                 text += para.text + "\n"
         except Exception as e:
@@ -43,8 +45,9 @@ class parser():
         else:
             raise ValueError("Unsupported file type. Only .pdf and .docx are supported.")
 
+
 # if __name__ == "__main__":
-#     parser=parser()
-#     content = parser.extract_text(doc_path="G:/scripts/PG-AGI/hiring-assistant-chatbot/submissions/resumes/VAIBHAV_SINGH_5dbc5831-cea0-4c22-b30a-29d2300c8254_resume.pdf")
+#     parser_instance = parser()
+#     content = parser_instance.extract_text(doc_path="G:/scripts/PG-AGI/hiring-assistant-chatbot/submissions/resumes/VAIBHAV_SINGH_5dbc5831-cea0-4c22-b30a-29d2300c8254_resume.pdf")
 #     print("\n📄 Extracted Content:\n")
 #     print(content[:2000] + "...\n" if len(content) > 2000 else content)
