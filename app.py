@@ -322,7 +322,7 @@ with tab2:
     # Check for timeout first (before any other processing)
     if st.session_state.elapsed_seconds > st.session_state.total_time*60:
         st.session_state["timeout_occurred"] = True
-        st.error(f"⏰ Interview session has timed out ({session_state.total_time} minutes).")
+        st.error(f"⏰ Interview session has timed out ({st.session_state.total_time} minutes).")
         st.markdown(f"""
             ### ⏰ Session Timeout
             
